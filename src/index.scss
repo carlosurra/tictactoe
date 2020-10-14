@@ -1,0 +1,72 @@
+body {
+  width: 100%;
+}
+
+.tictactoe-board {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+.board-column:last-child .cell {
+  margin-bottom: 0;
+}
+    
+.cell {
+  height: 120px;
+  width: 120px;
+  padding: 0;
+  float: left;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 34px;
+  background-color: white;
+  border: 3px solid blue;
+  color: blue;
+  margin: 0 20px 20px 0;
+}
+  
+.cell:focus {
+  outline: none;
+}
+
+.board-actions {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.action_button {
+  width: 120px;
+  height: 50px;
+  margin: 0 0 20px 20px;
+  background-color: blue;
+  color: white;
+  border: transparent;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.action_button:hover {
+  background-color: white;
+  color: blue;
+  border: 2px solid blue;
+}
+
+.disabled {
+  display: none;
+}
+
+.action_button:focus {
+  outline: none;
+}
+
+
+.status {
+  width: 200px;
+  font-size: 30px;
+  text-align: center;
+}
+
